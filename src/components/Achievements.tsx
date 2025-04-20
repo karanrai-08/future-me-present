@@ -22,13 +22,13 @@ export const Achievements = () => {
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-[#8B5CF6]/5">
+    <section id="achievements" className="py-20 bg-white border">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#00000] mb-4">
             Achievements
           </h2>
-          <p className="text-[#8B5CF6]/70 max-w-2xl mx-auto">
+          <p className="text-[#000000]/70 max-w-2xl mx-auto">
             Recognition and milestones in my academic and professional journey
           </p>
         </div>
@@ -42,11 +42,11 @@ export const Achievements = () => {
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   {achievement.icon}
-                  <h3 className="text-xl font-semibold text-[#8B5CF6]">
+                  <h3 className="text-xl font-semibold text-[#000000]/80">
                     {achievement.title}
                   </h3>
                 </div>
-                <p className="text-[#8B5CF6]/80">
+                <p className="text-[#46A094]">
                   {achievement.description}
                 </p>
               </CardContent>

@@ -8,10 +8,10 @@ export const Contact = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0EA5E9] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#000000] mb-4">
               Get In Touch
             </h2>
-            <p className="text-[#0EA5E9]/70 max-w-2xl mx-auto">
+            <p className="text-[#000000]/80 max-w-2xl mx-auto">
               Have a question or want to work together? Drop me a message!
             </p>
           </div>
@@ -37,7 +37,7 @@ export const Contact = () => {
               />
             </div>
             <div className="text-center">
-              <Button className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white px-8 transition-all duration-300 hover:shadow-lg">
+              <Button className="bg-gradient-to-r from-gray-200 to-gray-500 hover:bg-[#0EA5E9]/90 text-white px-8 transition-all duration-300 hover:shadow-lg">
                 Send Message
               </Button>
             </div>

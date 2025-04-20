@@ -3,7 +3,7 @@ export const About = () => {
     <section id="about" className="py-20 bg-[#46A094]/5">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#46A094] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#000000] mb-4">
             About Me
           </h2>
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">

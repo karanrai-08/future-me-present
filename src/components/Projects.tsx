@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Link2 } from "lucide-react";
-
+// import photo from "/public/photo.jpg"
 export const Projects = () => {
   const projects = [
     {
@@ -14,7 +14,7 @@ export const Projects = () => {
       title: "Project Two",
       description: "Mobile-first e-commerce platform with seamless UX",
       tech: "Next.js • Tailwind • PostgreSQL",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      image: "/photo.jpg",
       link: "https://project-two.example.com"
     },
     {

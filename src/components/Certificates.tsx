@@ -22,13 +22,13 @@ export const Certificates = () => {
   ];
 
   return (
-    <section id="certificates" className="py-20 bg-gradient-to-b from-[#FFDEE2] to-[#F2FCE2]">
+    <section id="certificates" className="py-20 bg-white">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2C5F4F] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#000000] mb-4">
             Certifications
           </h2>
-          <p className="text-[#2C5F4F]/70 max-w-2xl mx-auto">
+          <p className="text-[#000000]/70 max-w-2xl mx-auto">
             Professional certifications and achievements in technology
           </p>
         </div>
@@ -36,13 +36,13 @@ export const Certificates = () => {
           {certificates.map((cert, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-[#D3E4FD] to-[#FDE1D3] border-none"
+              className="hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-gray-100 to-gray-400 border-none"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardHeader className="flex flex-row items-center gap-4">
                 <Award className="w-8 h-8 text-[#46A094]" />
                 <div>
-                  <CardTitle className="text-xl text-[#2C5F4F]">{cert.title}</CardTitle>
+                  <CardTitle className="text-xl text-[#000000]">{cert.title}</CardTitle>
                   <p className="text-sm text-[#2C5F4F]/70">{cert.issuer}</p>
                 </div>
               </CardHeader>
