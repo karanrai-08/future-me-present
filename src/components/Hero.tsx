@@ -1,13 +1,20 @@
 
 import { Button } from "./ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export const Hero = () => {
   return (
     <section className="min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
       <div className="container px-4 py-16 mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-          Hi, I'm <span className="text-[#1a365d]">Your Name</span>
-        </h1>
+        <div className="flex flex-col items-center gap-6 mb-8">
+          <Avatar className="w-32 h-32 border-4 border-[#1a365d]">
+            <AvatarImage src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" alt="Karan Rai" />
+            <AvatarFallback>KR</AvatarFallback>
+          </Avatar>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 animate-fade-in">
+            Hi, I'm <span className="text-[#1a365d]">Karan Rai</span>
+          </h1>
+        </div>
         <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
           A passionate developer crafting beautiful and functional web experiences
         </p>
