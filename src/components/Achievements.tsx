@@ -22,13 +22,13 @@ export const Achievements = () => {
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-gradient-to-b from-[#E5DEFF] to-[#F2FCE2]">
+    <section id="achievements" className="py-20 bg-[#8B5CF6]/5">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2C5F4F] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-4">
             Achievements
           </h2>
-          <p className="text-[#2C5F4F]/70 max-w-2xl mx-auto">
+          <p className="text-[#8B5CF6]/70 max-w-2xl mx-auto">
             Recognition and milestones in my academic and professional journey
           </p>
         </div>
@@ -36,17 +36,17 @@ export const Achievements = () => {
           {achievements.map((achievement, index) => (
             <Card 
               key={index}
-              className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-[#F2FCE2] to-[#E5DEFF] border-none"
+              className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-white border-[#8B5CF6]/10"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   {achievement.icon}
-                  <h3 className="text-xl font-semibold text-[#2C5F4F]">
+                  <h3 className="text-xl font-semibold text-[#8B5CF6]">
                     {achievement.title}
                   </h3>
                 </div>
-                <p className="text-[#2C5F4F]/80">
+                <p className="text-[#8B5CF6]/80">
                   {achievement.description}
                 </p>
               </CardContent>

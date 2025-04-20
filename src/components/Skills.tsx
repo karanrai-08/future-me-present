@@ -1,4 +1,3 @@
-
 import { Award, Code, Database, Briefcase } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
@@ -31,13 +30,13 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-white to-[#F2FCE2]">
+    <section id="skills" className="py-20 bg-[#F97316]/5">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2C5F4F] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F97316] mb-4">
             Skills & Expertise
           </h2>
-          <p className="text-[#2C5F4F]/70 max-w-2xl mx-auto">
+          <p className="text-[#F97316]/70 max-w-2xl mx-auto">
             A diverse set of skills and technologies I use to bring ideas to life
           </p>
         </div>
@@ -45,13 +44,13 @@ export const Skills = () => {
           {skills.map((skill, index) => (
             <Card 
               key={index} 
-              className={`overflow-hidden transition-all duration-300 hover:shadow-lg animate-fade-in hover:scale-105 bg-gradient-to-br ${skill.bgColor} border-none`}
+              className="overflow-hidden transition-all duration-300 hover:shadow-lg animate-fade-in hover:scale-105 bg-white border-[#F97316]/10"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   {skill.icon}
-                  <h3 className="text-xl font-semibold text-[#2C5F4F]">
+                  <h3 className="text-xl font-semibold text-[#F97316]">
                     {skill.category}
                   </h3>
                 </div>
@@ -59,7 +58,7 @@ export const Skills = () => {
                   {skill.items.map((item, itemIndex) => (
                     <li 
                       key={itemIndex} 
-                      className="text-[#2C5F4F]/80 flex items-center gap-2"
+                      className="text-[#F97316]/80 flex items-center gap-2"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-[#46A094]" />
                       {item}
@@ -74,4 +73,3 @@ export const Skills = () => {
     </section>
   );
 };
-

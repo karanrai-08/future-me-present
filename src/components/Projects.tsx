@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Link2 } from "lucide-react";
 
@@ -42,13 +41,13 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-[#F8F9FA]">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2C5F4F] mb-4">
             Featured Projects
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-[#2C5F4F]/70 max-w-2xl mx-auto">
             A showcase of my recent work and technical achievements
           </p>
         </div>
@@ -62,7 +61,7 @@ export const Projects = () => {
               className="group"
             >
               <Card 
-                className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-white border-gray-100"
+                className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-white border-[#2C5F4F]/10"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <img
@@ -71,14 +70,14 @@ export const Projects = () => {
                   className="w-full h-48 object-cover"
                 />
                 <CardHeader>
-                  <CardTitle className="text-gray-800 flex items-center gap-2">
+                  <CardTitle className="text-[#2C5F4F] flex items-center gap-2">
                     {project.title}
                     <Link2 className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </CardTitle>
-                  <CardDescription className="text-gray-600">{project.tech}</CardDescription>
+                  <CardDescription className="text-[#2C5F4F]/70">{project.tech}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">{project.description}</p>
+                  <p className="text-[#2C5F4F]/80">{project.description}</p>
                 </CardContent>
               </Card>
             </a>
@@ -88,4 +87,3 @@ export const Projects = () => {
     </section>
   );
 };
-

@@ -1,22 +1,21 @@
-
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-[#F2FCE2] to-white">
+    <section id="contact" className="py-20 bg-[#0EA5E9]/5">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2C5F4F] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0EA5E9] mb-4">
               Get In Touch
             </h2>
-            <p className="text-[#2C5F4F]/70 max-w-2xl mx-auto">
+            <p className="text-[#0EA5E9]/70 max-w-2xl mx-auto">
               Have a question or want to work together? Drop me a message!
             </p>
           </div>
-          <form className="space-y-6 animate-fade-in bg-gradient-to-br from-[#F2FCE2] to-[#E5DEFF] p-8 rounded-lg shadow-lg">
+          <form className="space-y-6 animate-fade-in bg-white p-8 rounded-lg shadow-lg">
             <div>
               <Input 
                 type="text" 
@@ -38,7 +37,7 @@ export const Contact = () => {
               />
             </div>
             <div className="text-center">
-              <Button className="bg-[#46A094] hover:bg-[#2C5F4F] text-white px-8 transition-all duration-300 hover:shadow-lg">
+              <Button className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white px-8 transition-all duration-300 hover:shadow-lg">
                 Send Message
               </Button>
             </div>
