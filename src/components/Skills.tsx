@@ -6,19 +6,19 @@ export const Skills = () => {
     {
       category: "Frontend",
       icon: <Code className="w-6 h-6 text-[#46A094]" />,
-      items: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+      items: ["React", "TypeScript", "Tailwind CSS", "Angular.js"],
       bgColor: "from-[#F2FCE2] to-[#E5DEFF]"
     },
     {
       category: "Backend",
       icon: <Database className="w-6 h-6 text-[#46A094]" />,
-      items: ["Node.js", "Python", "PostgreSQL", "REST APIs"],
+      items: ["Node.js", "Express", "PostgreSQL", "MongoDB"],
       bgColor: "from-[#D3E4FD] to-[#FDE1D3]"
     },
     {
       category: "Tools",
       icon: <Briefcase className="w-6 h-6 text-[#46A094]" />,
-      items: ["Git", "Docker", "VS Code", "Figma"],
+      items: ["Git", "PostMan", "VS Code", "Figma"],
       bgColor: "from-[#FEF7CD] to-[#FEC6A1]"
     },
     {

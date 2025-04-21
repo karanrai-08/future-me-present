@@ -15,7 +15,7 @@ export const Header = () => {
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-bold text-[#1a365d]">
-            Portfolio
+            Karan Rai
           </Link>
           <ul className="flex space-x-8">
             {navItems.map((item) => (

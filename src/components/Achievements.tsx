@@ -6,17 +6,17 @@ export const Achievements = () => {
   const achievements = [
     {
       title: "Academic Excellence",
-      description: "Ranked 73 out of 7000+ students at Lovely Professional University with a CGPA of 8.77/10.0",
+      description: "Ranked 70 out of 7000+ students at Lovely Professional University with a CGPA of 8.9/10.0",
       icon: <GraduationCap className="w-6 h-6 text-[#46A094]" />
     },
     {
       title: "Coding Proficiency",
-      description: "Solved 800+ programming questions on platforms like LeetCode, GFG, and Coding Ninjas",
+      description: "Solved 500+ programming questions on platforms like LeetCode, GFG, and Coding Ninjas",
       icon: <Code className="w-6 h-6 text-[#46A094]" />
     },
     {
       title: "Academic Achievement",
-      description: "Scored 94.4% aggregate in Intermediate and 83.3% in Matriculation examinations",
+      description: "Scored 90.6% aggregate in Intermediate and 93.5% in Matriculation examinations",
       icon: <Award className="w-6 h-6 text-[#46A094]" />
     }
   ];

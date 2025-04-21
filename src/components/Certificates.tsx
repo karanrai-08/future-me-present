@@ -5,19 +5,19 @@ import { Award } from "lucide-react";
 export const Certificates = () => {
   const certificates = [
     {
-      title: "Web Development Certification",
-      issuer: "Example Academy",
+      title: "Full Stack Web Development",
+      issuer: "CipherScools",
       date: "2024",
     },
     {
-      title: "React Development",
-      issuer: "Example Institute",
-      date: "2023",
+      title: "Decode DSA with JAVA",
+      issuer: "PW Skills",
+      date: "2025",
     },
     {
-      title: "TypeScript Mastery",
-      issuer: "Example School",
-      date: "2023",
+      title: "Cloud Computing",
+      issuer: "NPTEL",
+      date: "2024",
     },
   ];
 

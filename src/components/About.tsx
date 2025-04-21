@@ -8,13 +8,13 @@ export const About = () => {
           </h2>
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
             <p className="text-lg text-[#46A094]/80 mb-6">
-              I'm a passionate web developer with a keen eye for design and a love for creating 
-              seamless user experiences. With expertise in modern web technologies, I turn complex 
-              problems into elegant solutions.
+            I'm a third-year B.Tech student specializing in Full Stack Development at Lovely Professional University (Batch 2026). My academic journey has been marked by consistent performance, maintaining a CGPA of 8.9/10.0.
+            </p>
+            <p className="text-lg text-[#46A094]/80 mb-6">
+            I’m a Full Stack Web Developer with a strong foundation in languages like C, C++, Java, and Python. I specialize in building dynamic, responsive web applications using modern technologies such as HTML, CSS, JavaScript, React, Node.js, and MongoDB.
             </p>
             <p className="text-lg text-[#46A094]/80">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
+            With a passion for creating clean, efficient code and solving real-world problems, I’ve tackled over 800+ coding challenges on platforms like LeetCode, GFG, and Coding Ninjas. My problem-solving mindset and technical versatility help me deliver end-to-end solutions that are both scalable and user-centric.
             </p>
           </div>
         </div>

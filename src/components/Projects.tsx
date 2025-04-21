@@ -4,38 +4,38 @@ import { Link2 } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Project One",
+      title: "Notes App",
       description: "A full-stack web application built with modern technologies",
-      tech: "React • TypeScript • Node.js",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      link: "https://project-one.example.com"
+      tech: "React • MongoDB • Node.js",
+      image: "/notes.png",
+      link: "https://notesappcipherschols05.netlify.app/"
     },
     {
-      title: "Project Two",
-      description: "Mobile-first e-commerce platform with seamless UX",
-      tech: "Next.js • Tailwind • PostgreSQL",
-      image: "/photo.jpg",
-      link: "https://project-two.example.com"
+      title: "Talk-A-Tive",
+      description: "Mobile-first online chatting platform with seamless UX",
+      tech: "React.js • Tailwind • PostgreSQL",
+      image: "/chat.png",
+      link: "https://lets-chat-xkxk.onrender.com"
     },
     {
-      title: "Project Three",
-      description: "Real-time collaboration tool for remote teams",
-      tech: "React • Firebase • Material UI",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      link: "https://project-three.example.com"
+      title: "N-Queens Visualiser",
+      description: "Step by step visualisation of Nqueen Problem",
+      tech: "HTML • CSS • HavaScript",
+      image: "/nqueen.png",
+      link: "https://harshit2047.github.io/N-Queens-Visualizer/"
     },
     {
-      title: "Project Four",
-      description: "AI-powered content management system",
-      tech: "Python • TensorFlow • Django",
-      image: "https://images.unsplash.com/photo-1518932945647-7a1c969f8be2",
+      title: "Bike Rental System",
+      description: "A web-based bike rental system built with Laravel for seamless bike booking and management.",
+      tech: "Php • Laravel • SQL",
+      image: "bike.png",
       link: "https://project-four.example.com"
     },
     {
-      title: "Project Five",
-      description: "Cross-platform mobile application for fitness tracking",
-      tech: "React Native • Redux • MongoDB",
-      image: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444",
+      title: "Weather Forecast",
+      description: "A simple weather forecast web app built with HTML, CSS, and JavaScript to display real-time weather updates.",
+      tech: "HTML • CSS • JS",
+      image: "/weather.png",
       link: "https://project-five.example.com"
     }
   ];
