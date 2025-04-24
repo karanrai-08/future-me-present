@@ -14,8 +14,8 @@ const Index = () => {
       <Header />
       <main className="pt-16">
         <Hero />
-        <Projects />
         <About />
+        <Projects />
         <Skills />
         <Achievements />
         <Certificates />

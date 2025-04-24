@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 
 export const Certificates = () => {
   const certificates = [
@@ -8,16 +8,19 @@ export const Certificates = () => {
       title: "Full Stack Web Development",
       issuer: "CipherScools",
       date: "2024",
+      link: "https://www.cipherschools.com/certificates/fullstack"
     },
     {
       title: "Decode DSA with JAVA",
       issuer: "PW Skills",
       date: "2025",
+      link: "https://pwskills.com/certificates/dsa-java"
     },
     {
       title: "Cloud Computing",
       issuer: "NPTEL",
       date: "2024",
+      link: "https://nptel.ac.in/certificates/cloud-computing"
     },
   ];
 
@@ -34,22 +37,32 @@ export const Certificates = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-gray-100 to-gray-400 border-none"
-              style={{ animationDelay: `${index * 150}ms` }}
+            <a 
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              className="group"
             >
-              <CardHeader className="flex flex-row items-center gap-4">
-                <Award className="w-8 h-8 text-[#46A094]" />
-                <div>
-                  <CardTitle className="text-xl text-[#000000]">{cert.title}</CardTitle>
-                  <p className="text-sm text-[#2C5F4F]/70">{cert.issuer}</p>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-[#2C5F4F]/80">Issued: {cert.date}</p>
-              </CardContent>
-            </Card>
+              <Card 
+                className="hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-gray-100 to-gray-400 border-none cursor-pointer"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardHeader className="flex flex-row items-center gap-4">
+                  <Award className="w-8 h-8 text-[#46A094]" />
+                  <div className="flex-1">
+                    <CardTitle className="text-xl text-[#000000] flex items-center gap-2">
+                      {cert.title}
+                      <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </CardTitle>
+                    <p className="text-sm text-[#2C5F4F]/70">{cert.issuer}</p>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[#2C5F4F]/80">Issued: {cert.date}</p>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>
