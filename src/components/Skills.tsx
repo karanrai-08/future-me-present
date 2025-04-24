@@ -10,7 +10,7 @@ export const Skills = () => {
       items: [
         { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
         { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-        { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+        { name: "Tailwind CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" },
         { name: "Angular.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" }
       ],
       bgColor: "bg-blue-50 hover:bg-blue-100"
@@ -41,10 +41,10 @@ export const Skills = () => {
       category: "Soft Skills",
       icon: <Award className="w-6 h-6" />,
       items: [
-        { name: "Problem Solving", logo: "/skill-icons/problem-solving.svg" },
-        { name: "Communication", logo: "/skill-icons/communication.svg" },
-        { name: "Team Leadership", logo: "/skill-icons/leadership.svg" },
-        { name: "Agile", logo: "/skill-icons/agile.svg" }
+        { name: "Problem Solving" },
+        { name: "Communication" },
+        { name: "Team Leadership" },
+        { name: "Agile" }
       ],
       bgColor: "bg-orange-50 hover:bg-orange-100"
     }
@@ -83,11 +83,13 @@ export const Skills = () => {
                       key={itemIndex}
                       className="flex flex-col items-center gap-2 p-2 rounded-lg transition-all duration-300 hover:scale-110 group-hover:bg-white/50"
                     >
-                      <img 
-                        src={item.logo} 
-                        alt={item.name}
-                        className="w-8 h-8 object-contain"
-                      />
+                      {item.logo ? (
+                        <img 
+                          src={item.logo} 
+                          alt={item.name}
+                          className="w-8 h-8 object-contain"
+                        />
+                      ) : null}
                       <span className="text-sm text-gray-600 text-center">
                         {item.name}
                       </span>
